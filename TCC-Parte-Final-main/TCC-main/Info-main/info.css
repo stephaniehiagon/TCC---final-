@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+
+#header{
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 600px;
+    color: black;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    color: black;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    font-size: 25px;
+}
+
+#navbar li a:hover{
+    color: blue;
+}
+
+h1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.principal{
+    max-width: 1000px;
+    height: 267vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t1{
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img1{
+    margin-left: 100px;
+}
+
+.conteudo{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    gap: 2rem;
+}
+
+.conteudo .t2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 90px;
+}
+
+.conteudo .t3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.conteudo .titulo3{
+    margin-top: 30px;
+    font-size: 40px;
+    margin-right: 82px;
+}
+
+.imgs{
+    margin-left: 180px;
+}
+
+.imga{
+    margin-left: 48px;
+}
+

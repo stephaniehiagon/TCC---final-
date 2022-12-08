@@ -1,0 +1,44 @@
+.saiba {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    gap: 50px;
+}
+
+.saiba img {
+    width: 400px;
+}
+
+.saiba .saibaMais {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+
+    width: 400px;
+}
+
+.saiba .saibaMais h1 {
+    font-size: 30px;
+}
+
+.saiba .saibaMais p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.saiba .png {
+    padding-top: 1px;
+}
+
+.nbt a {
+    padding: 10px 60px;
+    border-radius: 20px;
+    background-color: #06187B;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}

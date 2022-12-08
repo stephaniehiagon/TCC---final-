@@ -1,0 +1,235 @@
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.navegacao {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15%;
+  align-items: center;
+  
+}
+
+.navegacao ol {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  font-size: 30px;
+  
+}
+
+.navegacao ol li {
+  padding: 5px;
+  color: white;
+  margin-top: px;
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(219, 219, 219), rgb(32, 32, 32));
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+  opacity: 0.6;
+  
+}
+
+.navegacao ol li:hover {
+  color: #c9c9cb;
+  cursor: pointer;
+  transition: 600ms;
+  background-image: linear-gradient(to bottom, rgb(23, 27, 255), rgb(62, 66, 255), rgb(24, 27, 192));
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+
+}
+
+.navegacao a {
+  text-decoration: none;
+}
+
+.containe {
+  background-color: black;
+  height: 100vh;
+}
+
+.fones {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin-top: -250px;
+  z-index: 1;
+}
+
+.fone-left {
+  animation: move2 3s infinite linear;
+}
+
+.fone-right {
+  transform: rotate(17deg);
+  position: absolute;
+  top: 200px;
+
+  animation: move 4s infinite linear;
+}
+
+.containe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 70px;
+}
+
+.containe .text {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.containe .text h1 {
+  font-size: 35px;
+  color: white;
+}
+
+.containe .text h2 {
+  color: #1f41ff;
+  font-size: 30px;
+}
+
+.containe .text p {
+  color: white;
+  font-size: 16px;
+}
+
+.containe .text a {
+  padding: 10px 60px;
+  border-radius: 20px;
+  background-color: #06187B;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px 0px;
+}
+
+.sobre .blue {
+  width: 700px;
+}
+
+.sobre .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 400px;
+  text-align: left;
+}
+
+.sobre .texto h1 {
+  font-size: 50px;
+}
+
+.sobre .texto h2 {
+  color: #06187b;
+}
+
+.sobre .texto p {
+  font-size: 19px;
+}
+
+.bnt a {
+  padding: 10px 60px;
+  border-radius: 20px;
+  background-color: #06187B;
+  color: white;
+  margin-top: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sobreNois {
+  text-align: center;
+  position: relative;
+  top: 70px;
+}
+
+
+
+.sobreNois p {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

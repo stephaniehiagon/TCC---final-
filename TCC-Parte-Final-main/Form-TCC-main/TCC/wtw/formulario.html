@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/confirm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Formulario WTW</title>
+</head>
+
+<body>
+    <main class="principal">
+       
+            <form action="form2.php" method="post">
+                <h2>Continue comprando</h2>
+                <div class="pesquisa">    
+                    <label><span class="icone">*</span> Nome:</label>
+                    <input name="Nome" type="text" placeholder="Nome" required id="input"><br>
+                </div>   
+                
+                <div class="pesquisa">    
+                    <label><span class="icone">*</span> Sobrenome:</label>
+                    <input name="Nome" type="text" placeholder="Sobrenome"required id="input"><br>
+                </div> 
+
+                <div class="pesquisa">    
+                    <label><span class="icone">*</span> E-mail:</label>
+                    <input name="Nome" type="text" placeholder="E-mail"required id="input"><br>
+                </div>  
+
+                <div class="pesquisa">    
+                    <label><span class=></span> CPF:</label>
+                    <input name="Nome" type="text" placeholder="CPF"required id="input"><br>
+                </div>   
+
+                <div class="pesquisa">    
+                    <label><span class=></span> CNPJ:</label>
+                    <input name="Nome" type="text" placeholder="CNPJ"required id="input"><br>
+                </div>   
+
+                <div class="pesquisa">    
+                    <label><span class="icone">*</span>Telefone:</label>
+                    <input name="Nome" type="text" placeholder="Telefone"required id="input"><br>
+                </div>  
+
+                
+            </form>
+          <!--  
+        <h2 class="duda">Sua senha de acesso </h2>
+            <form action="form2.php" method="post">
+                <div class="pesquisa">    
+                    <label><span class="icone">*</span> Senha:</label>
+                    <input name="Nome" type="text" placeholder="Senha"required id="input"><br>
+                </div>   
+                <div class="pesquisa">    
+                    <label><span class="icone">*</span> Repetir a senha:</label>
+                    <input name="Nome" type="text" placeholder="Repetir a senha"required id="input"><br>
+                </div>
+                </div>   
+            </form>
+
+        <h2 class="duda">Assine nosso informativo e receba novidades e promoções</h2>
+            <form action="form2.php" class="SimouNao" method="post">
+                Deseja Assinar?
+                <div class="pesquisa">    
+                    <label class="Sim"><span class=></span> Sim</label>
+                    <input name="Nome" type="radio" placeholder="nome"required id="input"><br>
+                </div>   
+
+                <div class="pesquisa">    
+                    <label class="Sim"><span class=></span> Não</label>
+                    <input name="Nome" type="radio" placeholder="nome"required id="input"><br>
+                </div>   
+                    <br>
+               
+            </form>-->
+            
+            <fieldset class="sapato1">
+                <p>Eu li e concordo com os termos de privacidade</p>
+                <input type="checkbox" id="gomes">
+                <button class="trigger" onclick="showModal()"> Política de privacidade</button>
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <span class="close-button" onclick="closeModal()">
+                        &times;
+                        </span>
+                        <h1>Política de privacidade</h1>
+                        Temos o compromisso com a privacidade e a segurança de nossos clientes durante a navegação e compra pelo site. Os dados cadastrais dos clientes serão mantidos em sigilo absoluto, as informações não serão trocadas ou divulgados para terceiros, exceto quando essas informações são necessárias para o processo de entrega ou para as devidas cobranças pertinentes ao pedido gerado pelo cliente.
+                    </div>
+                </div>
+
+                <button class="trigger" onclick="showwModal()">Confirmar</button>
+                <div class="modall" id="modall">
+                <div class="modall-content">
+                    <span class="close-buttonn" onclick="closeModall()">
+                        &times;
+                    </span>
+                    <h1>Parabéns pela compra</h1>
+                </div>           
+            </fieldset>
+             </fieldset>
+             
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/validarCheck.js"></script>
+    <script src="js/confirma.js"></script>
+</body>
+</html>
